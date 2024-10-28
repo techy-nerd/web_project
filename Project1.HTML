@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The space club</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Mingzat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            background-image: url(https://wallpapercave.com/wp/wp5769403.jpg);
+            background-color: white;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        ul {
+            background-color: white;
+            display: flex;
+            list-style-type: none;
+            
+        }
+
+        li {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            /* right: 0; */
+            width: 260px;
+        }
+
+        .box {
+            background-color: rgba(245, 245, 245, 0.901);
+            height: 60vh;
+            width: 60vw;
+            margin-top: 85px;
+            margin-left: 340px;
+
+        }
+
+        .heading {
+            text-align: center;
+            margin:20px;
+        }
+        .form{
+            padding: 5px;
+        }
+        button
+        {
+            color: white;
+            display: inline-block;
+            background-color: black;
+            font-weight: 500;
+            box-shadow: 10;
+            width: 50px;
+           
+            
+        }
+        h1{
+            font-family: "Mingzat", system-ui;
+        }
+        .cursive{
+            font-family: "Italianno", cursive;
+            font-size:xx-large;
+        }
+        /* using INPUT TAGG SELECTOR */
+        input::placeholder{
+            color:black;
+            }
+        </style>
+        
+  </head>
+  <body>      
+<div class="main">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Uses</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Reviews</li>
+            <li>Bulk orders</li>
+            <li>Faqs</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="box">
+        <br>
+        <div class="heading">
+            <h1 >Contact</h1>
+            <h1 class="cursive">We want to hear from you</h1>
+        </div>
+
+        <h2 style="padding: 10px;">Send us an Email:</h1>
+
+            
+                <div  class="form">
+                    <label for="name"></label>
+                    <input class="space" type="text" name="name" id="ame" placeholder="Name" >
+                    
+                </div>
+
+                <div class="form">
+                    <label for="email"></label>
+                    <input class="space" type="text" name="email" id="email" placeholder=" Email Address">
+                    
+                </div>
+
+                <div style="padding: 5px"; >
+                    <textarea class="space" placeholder="Message" rows="6" cols="75"></textarea>
+                </div>
+
+                <div class="button">
+                    <button>Send</button>
+                </div>
+
+            
+    </div>
+</div>
+
+
+</html>
