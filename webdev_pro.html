@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #ff5722;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .order-btn {
+            background-color: #ffffff;
+            color: #ff5722;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .order-btn:hover {
+            background-color: #ffd3b6;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 80vh;
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .hero .hero-btn {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero .hero-btn:hover {
+            background-color: #ffffff;
+            color: #ff5722;
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .menu h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .menu-item p {
+            color: #777;
+            margin: 0 0 10px;
+        }
+
+        .menu-item .price {
+            font-size: 1.2rem;
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Foodie</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="order-btn">Order Now</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Delicious Food Delivered to Your Door</h1>
+        <p>Fresh, hot, and tasty meals ready for you.</p>
+        <button class="hero-btn">Explore Menu</button>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://t3.ftcdn.net/jpg/06/36/30/26/360_F_636302609_Tb1JtDTQ4zawO0ub6L2fHzlrW586f9tr.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Cheesy and delicious.</p>
+                <div class="price">RS 250</div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Burger">
+                <h3>Burger</h3>
+                <p>Juicy and flavorful.</p>
+                <div class="price">RS 95</div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Creamy and savory.</p>
+                <div class="price">RS 200</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Foodie | Made with ❤️  by <a href="#">Ayushi & Devanshi</a></p>
+    </footer>
+</body>
+</html>
+
